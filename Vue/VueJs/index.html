@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>My first Vue app</title>
@@ -11,7 +11,9 @@
     <div id="app">
         {{ message }}
     </div>
-
+	<div id="myapp">
+		{{message}}
+	</div>
     <div id="app-2">
         <span v-bind:title="message">
             鼠标悬停几秒钟查看此处动态绑定的提示信息！
@@ -43,6 +45,7 @@
 
     <script>
 
+        //this is test
         var app = new Vue({ el: "#app", data: { message: "Hello Vue,This Is My First Vue App." } })
         
         var app2 = new Vue({
